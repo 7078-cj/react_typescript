@@ -1,9 +1,5 @@
-type PersonProps = {
-    name:{
-        firstName: string
-        lastName: string
-    }
-}
+import type { PersonProps } from "./Person.types"
+
 
 function Person({name}:PersonProps) {
   return (
