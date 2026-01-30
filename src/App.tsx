@@ -5,6 +5,7 @@ import Child from './components/Child'
 import Greet from './components/Greet'
 import Heading from './components/Heading'
 import Input from './components/Input'
+import LoggedIn from './components/LoggedIn'
 import Parent from './components/Parent'
 import Person from './components/Person'
 import PersonList from './components/PersonList'
@@ -42,6 +43,7 @@ function App() {
       <Parent child={<Child/>}/>
       <Button handleClick={(e, id)=> console.log('button clicked', e, id)}/>
       <Input value='' handleChange={(event) => console.log(event)}/>
+      <LoggedIn/>
     </>
   )
 }
