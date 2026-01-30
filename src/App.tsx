@@ -12,6 +12,7 @@ import PersonList from './components/PersonList'
 import Status from './components/Status'
 import Box from './context/Box'
 import { ThemeContextProvider } from './context/ThemeContext'
+import MutableRef from './ref/MutableRef'
 
 function App() {
   const personName={
@@ -49,6 +50,7 @@ function App() {
       <ThemeContextProvider>
         <Box/>
       </ThemeContextProvider>
+      <MutableRef/>
     </>
   )
 }
