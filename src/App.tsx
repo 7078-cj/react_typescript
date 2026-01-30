@@ -10,6 +10,8 @@ import Parent from './components/Parent'
 import Person from './components/Person'
 import PersonList from './components/PersonList'
 import Status from './components/Status'
+import Box from './context/Box'
+import { ThemeContextProvider } from './context/ThemeContext'
 
 function App() {
   const personName={
@@ -44,6 +46,9 @@ function App() {
       <Button handleClick={(e, id)=> console.log('button clicked', e, id)}/>
       <Input value='' handleChange={(event) => console.log(event)}/>
       <LoggedIn/>
+      <ThemeContextProvider>
+        <Box/>
+      </ThemeContextProvider>
     </>
   )
 }

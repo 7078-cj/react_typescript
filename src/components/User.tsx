@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 
 type AuthUser = {
     name: string
@@ -28,3 +28,4 @@ function User() {
 }
 
 export default User
+
